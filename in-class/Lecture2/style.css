@@ -1,0 +1,15 @@
+/*This is a comment. The general style/ template for CSS is-
+
+selector{                       Selects all HTML elements of this type
+    property: value;
+}*/
+
+.red-text {
+    color: red;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    /*Use with highest preference Arial, least preference sans-serif. If font name has space; use quotes (single or double quotes, either is fine)*/
+
+    font-family: Lobster;
+    /*Fonts inserted later on override ones specified before*/
+}
