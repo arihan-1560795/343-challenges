@@ -1,0 +1,50 @@
+header {
+    background-color: rgb(221, 221, 221);
+}
+html {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgb(240, 240, 240);    
+    
+}
+
+img {
+    height: 25em;
+    width: auto;
+    border-radius: 10px;
+    float: left;
+    margin-right: 10px;
+}
+
+
+#apod-info {
+    margin-top: 2%;
+    width: 65%;
+    text-align: left;
+}
+
+#page-info {
+    width: 40%;
+    font-size: 0.8em;
+    overflow: hidden;
+    padding: 1%;
+}
+
+#apod-info, #page-info {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#apod-info p {
+    font-size: 1.1em;    
+    font-weight: 250;
+}
+
+h1 {
+    font-size: 2em;
+    padding-top: 2px;
+
+}

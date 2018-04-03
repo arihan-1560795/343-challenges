@@ -1,0 +1,239 @@
+/*General Styling*/
+
+body {
+    font-family: Lato, 'Helvetica Neue', Helvetica, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Raleway, Lato, 'Helvetica Neue', Helvetica, Helvetica, sans-serif;
+    margin-top: 0px;
+    margin-bottom: 0.5rem;
+}
+
+h1 {
+    font-weight: 100;
+    font-size: 44pt;
+}
+
+p {
+    line-height: 1.43;
+    margin-top: 0px;
+    margin-bottom: 1rem;
+}
+
+/*Page Header*/
+
+.header {
+    height: 400px;
+    background-image: url("https://i.imgur.com/2P5EhEo.jpg");
+    background-size: cover;
+    background-position: bottom center;
+}
+
+.header-content {
+    width: 355px;
+    position: relative;
+    top: 200px;
+}
+
+.cart-link {
+    background-color: #814236;
+    color: white;
+    border: 1px solid #391D18;
+    padding: 5px 10px;
+}
+
+.cart-link-mobile {
+    display: none;
+    color: white;
+    float: right;
+    padding-top: 5px;
+}
+
+@media (max-width: 992px) {
+    .header {
+        background-image: linear-gradient(to bottom, #391D18, #814236);
+        padding-top: 0px;
+        color: white;
+        height: auto;
+    }
+
+    .header-content {
+        width: auto;
+        top: 0px;
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+
+    h1 {
+        font-size: 24pt;
+    }
+
+    .cart-link {
+        display: none;
+    }
+
+    .cart-link-mobile {
+        display: inline;
+    }
+}
+
+/*Features Section*/
+
+.features {
+    background-color: #F8F8F8;
+    overflow:auto;
+    padding-bottom: 23px;
+    
+}
+h2 {
+    text-align: center;
+    margin: 23px 0px 23px 0px;
+    font-variant: small-caps;
+}
+
+h3 {
+    margin-top: 0px;
+}
+
+
+.feature {
+    background-color: white;
+    padding: 5px;
+    height: 275px;
+    margin-bottom: 15px;
+    text-align: center;
+    border-radius: 3px;
+    border: 1px solid #DFDFDF;
+}
+
+.feature svg {
+    height: 50px;
+    fill: #814236;
+}
+
+@media (max-width: 768px) {
+    .feature {
+        text-align: left;
+        padding: 10px;
+        height: auto;
+    }
+
+    .feature svg {
+        float: left;
+    }
+
+    .feature h3, .feature p {
+        padding-left: 57px;
+    }
+
+    .feature p {
+        margin-bottom: 0px;
+    }
+}
+
+/*Uses section*/
+.uses   {
+    background-color: #EBEBEB;
+}
+
+.col-sm-12 {
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.col-sm-12 .feature {
+    padding: 0px;
+}
+
+
+.col-sm-12 .feature p, .col-sm-12 .feature h3 {
+    text-align: left;
+    padding: 8px 5px 0px 5px;
+    margin-bottom: 0px;
+}
+
+.notetaking {
+    background-image: url("../img/note-taking.jpg");    
+}
+
+.art {
+    background-image: url("../img/art.jpg");    
+}
+
+.coloring {
+    background-image: url("../img/coloring.jpg");    
+}
+
+
+.drafting {
+    background-image: url("../img/drafting.jpg");    
+}
+
+.notetaking, .art, .coloring, .drafting {
+    height: 150px;
+    background-position: center center;
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+    .feature {
+        text-align: left;
+        padding: 10px;
+        height: auto;
+    }
+    .feature h3, .feature p {
+        padding-left: 0px;
+    }
+}
+
+/*Testimonials Section*/
+
+.testimonials {
+    background: #F8F8F8;
+}
+
+.head {
+    border-radius: 40px;
+    float: left;
+}
+
+.col-xs-12 p, .col-xs-12 h3 {
+    padding-left: 100px;
+}
+.col-xs-12 h3 {
+    color: rgb(104, 82, 82);
+}
+
+span {
+    font-size: 0.8em;
+    color: #999999
+}
+
+/*Footer Section*/
+.footer {
+    background-color: #391D18;
+    color: #EEEEEE;
+    padding: 25px;
+}
+
+.footer a {
+    color: #AAAAAA;
+    text-decoration: none;
+}
+
+.contact-links a{
+    float: right;
+    padding: 5px;
+}
+
+.copyright-pencil {
+    float: left;
+}
+
+.credits {
+    clear: left;
+    padding-top: 20px;
+}

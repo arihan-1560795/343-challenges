@@ -1,0 +1,77 @@
+.dots, .arrow, h1, #logo {  position: absolute;   }
+.slide, .slides {           position: relative;   }
+h1, .arrow, .dots {         color:white;        }
+
+/*Removes anything but text and spacing specified; disables scroll*/
+html, body {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    height:100%;
+    width:100%;
+    overflow: hidden;
+}
+
+h1 {
+    font-family: 'Roboto Slab';
+    font-weight: 900; 
+    font-size: 60px;
+    bottom: 40px;
+    right: 40px;
+    margin:0;
+}
+
+.slides {
+    width: 400%;
+    left: 0px;
+    transition: all 1s ease-out;
+}
+
+/*Styles background to fit whole screen; scroll horizontally*/
+.slide {
+    float: left;
+    height: 100vh;
+    width: 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;    
+}
+
+/*Specifies dot position*/
+.dots {
+    bottom: 15px;
+    left: 50%;
+}
+
+.arrow, .dot{   opacity: 0.6;   }
+
+/*Left-Right arrow stylign*/
+.arrow {
+    top: 50%;
+    font-size: 40px;   
+}
+
+#left {     left: 15px; }
+#right {    right: 15px;}
+
+/*Slide background*/
+#slide-0 {  background-image: url("../img/california.jpg"); }
+#slide-1 {  background-image: url("../img/colorado.jpg");   }
+#slide-2 {  background-image: url("../img/fresno.jpg");     }
+#slide-3 {  background-image: url("../img/osu.jpg");        }
+
+/*INTERACTIVITY/ CHANGING PROPERTIES*/
+/*Logo and text size on mobile*/
+@media (max-width: 768px) {
+    h1{             
+        font-size: 24px;
+        right: 15px;
+    }    
+    #logo > img {   width: 50%;     }
+    .dots{          font-size: 14px;}
+}
+/*, .dot:hover*/
+.arrow:hover{
+    opacity: 1;
+    cursor: pointer;
+}
